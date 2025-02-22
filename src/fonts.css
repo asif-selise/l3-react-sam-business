@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Mena Grotesk Bold';
+  src: url('/assets/fonts/MenaGrotesk-Bold.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 100 900;
+}
+@font-face {
+  font-family: 'RT Rondelle Bold';
+  src: url('/assets/fonts/RTRondelle-Bold.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 100 900;
+}
+@font-face {
+  font-family: 'RT Rondelle Book';
+  src: url('/assets/fonts/RTRondelle-Book.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 100 900;
+}
+
+/* Fallback */
+body {
+  font-family: 'Mena Grotesk Bold', 'RT Rondelle Bold', 'RT Rondelle Book',
+    sans-serif !important;
+}
