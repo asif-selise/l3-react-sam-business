@@ -21,7 +21,8 @@
 
 
 # distribution
-/dist
+/dist/*
+/dist/assets
 
 
 # Test reports
