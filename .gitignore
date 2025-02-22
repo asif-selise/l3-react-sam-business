@@ -20,6 +20,9 @@
 .env.production
 
 
+# distribution
+/dist
+
 
 # Test reports
 /test-reports
