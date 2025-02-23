@@ -1,12 +1,22 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { useDispatch as useDispatchBase, useSelector as useSelectorBase } from 'react-redux';
-import countSlice from '../slices/count.slice';
+import snackbarSlice from '../slices/snackbarSlice/snackbar.slice';
+import syncSlice from '../slices/syncSlice/sync.slice';
+import serviceOrderSlice from '../slices/serviceOrderSlice/serviceOrder.slice';
+import topBarSearchSlice from '../slices/topbarSearcSlice/topbarSearch.slice';
+import soStatusSlice from '../slices/soStatusSlice/soStatus.slice';
+import kvStatusSlice from '../slices/kvStatusSlice/kvStatus.slice';
 
 
 
 export const store = configureStore({
   reducer: {
-    count: countSlice.reducer
+    snackbar: snackbarSlice.reducer,
+    sync: syncSlice.reducer,
+    serviceOrder: serviceOrderSlice.reducer,
+    topBarSearch: topBarSearchSlice.reducer,
+    soStatus: soStatusSlice.reducer,
+    kvStatus: kvStatusSlice.reducer,
   },
 });
 
